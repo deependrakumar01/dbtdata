@@ -3,8 +3,11 @@ pipeline {
     stages {
         stage('Stage 1') {
             steps {
-                echo 'Hello' 
-                sh '. /Users/saumyamathur/Applications/jenkins/test.sh World'
+                sh '''
+                    echo 'Hello'
+                    'cd /Users/saumyamathur/Applications/jenkins/'
+                    sh '. test.sh World'
+                '''
             }
         }
     }
