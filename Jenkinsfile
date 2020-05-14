@@ -4,7 +4,7 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo 'Hello' 
-                sh './Users/saumyamathur/Applications/jenkins/test.sh World'
+                sh '/Users/saumyamathur/Applications/jenkins/test.sh World'
             }
         }
     }
