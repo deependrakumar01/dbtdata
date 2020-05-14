@@ -6,7 +6,7 @@ pipeline {
                 sh '''
                     echo 'Hello'
                     cd '/Users/saumyamathur/Applications/jenkins/'
-                    sh '. test.sh World'
+                    sh './test.sh World'
                 '''
             }
         }
