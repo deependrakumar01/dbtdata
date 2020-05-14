@@ -7,7 +7,7 @@ pipeline {
                     
                     sh  '. test.sh World'
                     sh 'pwd'
-                    sh 'cd $home'
+                    sh 'cd /Users/saumyamathur'
                     sh 'pwd'
                     
                     }               
