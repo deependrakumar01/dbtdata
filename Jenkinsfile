@@ -7,6 +7,8 @@ pipeline {
                     
                     sh  '. test.sh World'
                     sh 'pwd'
+                    sh 'cd $home'
+                    sh 'echo : pwd'
                     
                     }               
                     echo "Hello"
