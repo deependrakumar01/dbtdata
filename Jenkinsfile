@@ -4,8 +4,7 @@ pipeline {
         stage('Stage 1') {
             steps {
                 echo 'Hello' 
-                cd NewFolder
-                sh "cd /NewFolder/test.sh World"
+                cd "/Users/saumyamathur/.jenkins/workspace/example-jenkins - pipeline/NewFolder ./test.sh World"
             }
         }
     }
