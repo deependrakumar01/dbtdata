@@ -4,8 +4,9 @@ pipeline {
         stage('Stage 1') {
             steps {
                 dir('/Users/saumyamathur/Applications/jenkins/'){
-                    echo $pwd
+                    
                     sh  '. test.sh World'
+                    echo $pwd
                     }               
                     echo "Hello"
             }
