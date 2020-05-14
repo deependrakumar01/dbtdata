@@ -6,7 +6,8 @@ pipeline {
                 dir('/Users/saumyamathur/Applications/jenkins/'){
                     
                     sh  '. test.sh World'
-                    echo $PWD
+                    sh '''
+                    echo path is: `pwd`
                     }               
                     echo "Hello"
             }
