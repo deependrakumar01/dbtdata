@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage('Stage 1') {
             steps {
-                echo 'Hello world!' 
+                echo 'Hello' 
+                cd NewFolder
+                sh "cd /NewFolder/test.sh World"
             }
         }
     }
