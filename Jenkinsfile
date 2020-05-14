@@ -5,7 +5,7 @@ pipeline {
             steps {
                 dir('/Users/saumyamathur/Applications/jenkins/'){
                     sh  '. test.sh World'
-                    }                sh '''
+                    }               
                     echo "Hello"
             }
         }
